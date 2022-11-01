@@ -25,7 +25,7 @@ class HomeService extends Service {
       const result = await app.mysql.insert('list', { name });
       return result;
     } catch (err) {
-      console.log(err);
+      console.log('新增用户', err);
       return null;
     }
   }
